@@ -74,16 +74,17 @@ Etape 4
 ### Modifier ses hosts :
 
 Windows : C:\Windows\system32\drivers\etc\hosts
+
 Mac & Linux : /etc/hosts
  
 Rajouter cette ligne :
-127.0.0.1       findmycode.local
+127.0.0.1       myDropCode.local
  
 ### Ajouter un Virtual Host :
 
 Windows : C:\wamp\bin\apache\<Version Apache>\conf\extra\httpd-vhosts.conf
 Mac : /etc/apache2/extra/httpd-vhosts.conf
-Linux : créer un fichier au nom du projet ("findmycode") dans /etc/apache2/sites-avalaible/
+Linux : créer un fichier au nom du projet ("myDropCode") dans /etc/apache2/sites-avalaible/
  
 Ecrire dedans :
  
@@ -114,7 +115,7 @@ Décommentez la ligne :
 
 	# Include conf/extra/httpd-vhosts.conf
  
-Linux : sudo a2ensite findmycode
+Linux : sudo a2ensite myDropCode
  
 ### Redémarrer Apache :
 

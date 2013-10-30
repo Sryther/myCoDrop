@@ -68,7 +68,19 @@ Lancer Curl :
 3 - Ouvrez votre terminal :
 	
 	cd /path/to/my/project
+
+Si vous voulez utiliser un Laravel "propre" utiliser la commande ci-dessous :
+
 	composer create-project laravel/laravel --prefer-dist
+
+En l'occurence, ici nous voulons utiliser Github. Il faut donc [Git](http://git-scm.com/).
+
+Installer le.
+
+Une fois fait, faites cette commande :
+
+	cd /racine/de/vos/sites //(par exemple C:\wamp\www\)
+	git clone https://github.com/Sryther/myDropCode.git
 
 Etape 3
 -------

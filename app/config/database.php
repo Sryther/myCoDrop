@@ -54,10 +54,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'localhost',
-			'database'  => 'myDropCode',
-			'username'  => 'root',
-			'password'  => '',
+			'host'      => '88.191.164.186',
+			'database'  => 'mycodrop',
+			'username'  => 'mycodrop',
+			'password'  => 'DzEnQAAuVMaRBEBE',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

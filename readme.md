@@ -4,8 +4,7 @@ Comment installer Laravel4
 Etape 1
 -------
 
-Laravel utilise Composer pour gérer ses dépendances :
-1 - [RSite de Composer](http://getcomposer.org/)
+Laravel utilise Composer pour gérer ses dépendances : [Site de Composer](http://getcomposer.org/)
 
 ### Windows
 

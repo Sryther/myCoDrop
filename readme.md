@@ -35,12 +35,14 @@ Ajouter le répertoire où vous avez placé Composer (C:\bin dans cet exemple) e
 
 Commandes pour récupérer composer.phar :
 
-	C:\Users\username>cd C:\bin
-	C:\bin>php -r "eval('?>'.file_get_contents('https://getcomposer.org/installer'));"
+	mkdir C:\bin
+	cd C:\bin
+
+Placez composer.phar dans C:\bin
 
 Créer un fichier .bat :
 
-	C:\bin>echo @php "%~dp0composer.phar" %*>composer.bat
+	echo @php "%~dp0composer.phar" %*>composer.bat
 
 Fermer puis ré-ouvrir le terminal.
 

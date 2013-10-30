@@ -30,8 +30,8 @@ Fermer puis ré-ouvrir le terminal.
 
 2 - Installer Composer :
 
-* Changer dans le php.ini > detect_unicode = Off
-* Lancer Curl :
+Changer dans le php.ini > detect_unicode = Off
+Lancer Curl :
 
 	$ cd /path/to/my/project
 	$ curl -s http://getcomposer.org/installer | php
@@ -40,7 +40,7 @@ Fermer puis ré-ouvrir le terminal.
 
 2 - Installer Composer :
 
-* Lancer Curl :
+Lancer Curl :
 
 	$ curl -sS https://getcomposer.org/installer | php
 	$ mv composer.phar /usr/local/bin/composer

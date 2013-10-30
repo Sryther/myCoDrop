@@ -7,6 +7,8 @@ Etape 1
 Laravel utilise Composer pour gérer ses dépendances :
 1 - [RSite de Composer](http://getcomposer.org/)
 
+### Windows
+
 2 - Installer Composer :
 * Via l'installateur Windows
 * Via le fichier composer.phar :
@@ -24,7 +26,28 @@ Créer un fichier .bat :
 
 Fermer puis ré-ouvrir le terminal.
 
-3 - Ouvrez votre terminal et entrez cette commande :
+### Mac
+
+2 - Installer Composer :
+
+* Changer dans le php.ini > detect_unicode = Off
+* Lancer Curl :
+
+	$ cd /path/to/my/project
+	$ curl -s http://getcomposer.org/installer | php
+
+### Linux
+
+2 - Installer Composer :
+
+* Lancer Curl :
+
+	$ curl -sS https://getcomposer.org/installer | php
+	$ mv composer.phar /usr/local/bin/composer
+
+3 - Ouvrez votre terminal :
+	
+	cd /path/to/my/project
 	composer create-project laravel/laravel --prefer-dist
 
 Etape 2

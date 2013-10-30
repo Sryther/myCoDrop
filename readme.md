@@ -34,7 +34,8 @@ Configuration serveur :
 Etape 3
 -------
 
-[Configuration de Laravel4](http://four.laravel.com/#configuration)
+Lire les définitions des différents commits.
+Plus d'infos : [Configuration de Laravel4](http://four.laravel.com/#configuration)
 
 
 

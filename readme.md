@@ -4,6 +4,19 @@ Comment installer Laravel4
 Etape 1
 -------
 
+Configuration serveur :
+* Autoriser OpenSSL en https, ouvrir :
+
+	C:\wamp\bin\php\'votre version php'\php.ini
+
+Chercher la ligne (Ctrl+F) "openssl", enlever le ";" devant "extension".
+
+* PHP >= 5.3.7
+* MCrypt PHP Extension
+
+Etape 2
+-------
+
 Laravel utilise Composer pour gérer ses dépendances : [Site de Composer](http://getcomposer.org/)
 
 ### Windows
@@ -49,25 +62,75 @@ Lancer Curl :
 	cd /path/to/my/project
 	composer create-project laravel/laravel --prefer-dist
 
-Etape 2
--------
-
-Configuration serveur :
-* Autoriser OpenSSL en https, ouvrir :
-
-	C:\wamp\bin\php\'votre version php'\php.ini
-
-Chercher la ligne (Ctrl+F) "openssl", enlever le ";" devant "extension".
-
-* PHP >= 5.3.7
-* MCrypt PHP Extension
-
 Etape 3
 -------
 
 Lire les définitions des différents commits.
 Plus d'infos : [Configuration de Laravel4](http://four.laravel.com/#configuration)
 
+Etape 4
+-------
+ 
+### Modifier ses hosts :
+
+Windows : C:\Windows\system32\drivers\etc\hosts
+Mac & Linux : /etc/hosts
+ 
+Rajouter cette ligne :
+127.0.0.1       findmycode.local
+ 
+### Ajouter un Virtual Host :
+
+Windows : C:\wamp\bin\apache\<Version Apache>\conf\extra\httpd-vhosts.conf
+Mac : /etc/apache2/extra/httpd-vhosts.conf
+Linux : créer un fichier au nom du projet ("findmycode") dans /etc/apache2/sites-avalaible/
+ 
+Ecrire dedans :
+ 
+	<VirtualHost *:80>
+	    DocumentRoot "<Chemin vers le dossier du site>"
+	    ServerName <Nom du projet>.local
+	    <directory "<Chemin vers le dossier du site>">
+	        Options Indexes FollowSymLinks
+	        AllowOverride all
+	        Order Deny,Allow
+	        Deny from all
+	        Allow from 127.0.0.1
+	    </directory>
+	</VirtualHost>
+ 
+Enregistrer.
+La balise <Directory> évite d'écrire un .htaccess dans le dossier du site.
+ 
+### Activer les Virtual Hosts (only Linux & Windows) :
+
+Windows : ouvrir le fichier C:\wamp\bin\apache\<Version Apache>\conf\httpd.conf
+Chercher la ligne :
+ 
+	# Virtual hosts
+	# Include conf/extra/httpd-vhosts.conf
+ 
+Décommentez la ligne :
+
+	# Include conf/extra/httpd-vhosts.conf
+ 
+Linux : sudo a2ensite findmycode
+ 
+### Redémarrer Apache :
+
+Windows : clic-gauche Wamp > Redémarrer les services
+Linux & Max : sudo apachectl restart
+ 
+Le site est prêt à être utilisé.
+ 
+### More
+ 
+Files :
+ 
+Les fichiers du site sont contenus (sauf si vous avez modifié) dans :
+Windows : C:\wamp\www\myCodeDrop\
+Linux : /var/www/myDropCode
+Mac : /Library/WebServer/Documents/myCodeDrop
 
 
 ## Laravel PHP Framework

@@ -17,7 +17,7 @@ Chercher la ligne (Ctrl+F) "openssl", enlever le ";" devant "extension".
 Pré-requis :
 
 * version PHP >= 5.3.7
-* MCrypt PHP Extension (installé de base)
+* MCrypt PHP Extension (installé et configuré de base)
 
 Etape 2
 -------

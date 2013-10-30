@@ -10,8 +10,8 @@ Communs à tous
 
 ### PHP & ses extensions
 
-* PHP >= 5.3.7
-* MCrypt PHP Extension
+* version PHP >= 5.3.7
+* MCrypt PHP Extension (installé et configuré de base)
 * OpenSSL PHP Extension (requis pour Composer)
 
 ### Editeur de texte
@@ -64,4 +64,4 @@ Installer les plugins suivants :
 * Sublime Code Intel
 * Blade Snippets
 * Laravel Blade Highlighter
-* Le thème de votre choix
+* Le thème de votre choix (Google it)

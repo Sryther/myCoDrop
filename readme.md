@@ -125,6 +125,7 @@ Ecrire dedans :
 Edit by Flo
 
 Sous unix, j'ai dû mettre le VHost suivant :
+
 	<VirtualHost 127.0.0.2>
 	    DocumentRoot "<chemin vers dossier public codrop>"
 	    ServerName mycodrop.local

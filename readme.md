@@ -65,9 +65,7 @@ Lancer Curl :
 	$ curl -sS https://getcomposer.org/installer | php
 	$ mv composer.phar /usr/local/bin/composer
 
-3 - Ouvrez votre terminal :
-	
-	cd /path/to/my/project
+## Suite commune
 
 Si vous voulez utiliser un Laravel "propre" utiliser la commande ci-dessous :
 

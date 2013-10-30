@@ -54,10 +54,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => '88.191.164.186',
+			'host'      => 'fravimal.me',
 			'database'  => 'mycodrop',
 			'username'  => 'mycodrop',
-			'password'  => 'DzEnQAAuVMaRBEBE',
+			'password'  => 'FQEqQKF6YzMfBxrY',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

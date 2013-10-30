@@ -89,17 +89,17 @@ Plus d'infos : [Configuration de Laravel4](http://four.laravel.com/#configuratio
 
 Etape 4
 -------
- 
+
 ### Modifier ses hosts :
 
 Windows : C:\Windows\system32\drivers\etc\hosts
 
 Mac & Linux : /etc/hosts
- 
+
 Rajouter cette ligne :
 
 127.0.0.1       myDropCode.local
- 
+
 ### Ajouter un Virtual Host :
 
 Windows : C:\wamp\bin\apache\<Version Apache>\conf\extra\httpd-vhosts.conf
@@ -107,9 +107,9 @@ Windows : C:\wamp\bin\apache\<Version Apache>\conf\extra\httpd-vhosts.conf
 Mac : /etc/apache2/extra/httpd-vhosts.conf
 
 Linux : créer un fichier au nom du projet ("myDropCode") dans /etc/apache2/sites-avalaible/
- 
+
 Ecrire dedans :
- 
+
 	<VirtualHost *:80>
 	    DocumentRoot "<Chemin vers le dossier du site>"
 	    ServerName <Nom du projet>.local
@@ -121,37 +121,62 @@ Ecrire dedans :
 	        Allow from 127.0.0.1
 	    </directory>
 	</VirtualHost>
- 
+
+Edit by Flo
+
+Sous unix, j'ai dû mettre le VHost suivant :
+	<VirtualHost 127.0.0.2>
+	    DocumentRoot "<chemin vers dossier public codrop>"
+	    ServerName mycodrop.local
+	    <Directory "<chemin vers dossier public codrop>">
+	        Options Indexes FollowSymLinks MultiViews
+	        AllowOverride all
+	    </Directory>
+	</VirtualHost>
+
+dans /etc/apache2/conf/extra/httpd-vhosts.conf
+
+Et remplacer
+
+	127.0.0.1       myDropCode.local
+
+par
+
+	127.0.0.2      myDropCode.local
+
+
+Dans le fichier host
+
 Enregistrer.
 La balise <Directory> évite d'écrire un .htaccess dans le dossier du site.
- 
+
 ### Activer les Virtual Hosts (only Linux & Windows) :
 
 Windows : ouvrir le fichier C:\wamp\bin\apache\<Version Apache>\conf\httpd.conf
 
 Chercher la ligne :
- 
+
 	# Virtual hosts
 	# Include conf/extra/httpd-vhosts.conf
- 
+
 Décommentez la ligne :
 
 	# Include conf/extra/httpd-vhosts.conf
- 
+
 Linux : sudo a2ensite myDropCode
- 
+
 ### Redémarrer Apache :
 
 Windows : clic-gauche Wamp > Redémarrer les services
 
 Linux & Mac : sudo apachectl restart
- 
+
 Le site est prêt à être utilisé.
- 
+
 ### More
- 
+
 Files :
- 
+
 Les fichiers du site sont contenus (sauf si vous avez modifié) dans :
 
 Windows : C:\wamp\www\myCodeDrop\

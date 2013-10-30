@@ -133,7 +133,8 @@ Linux : sudo a2ensite myDropCode
 ### Redémarrer Apache :
 
 Windows : clic-gauche Wamp > Redémarrer les services
-Linux & Max : sudo apachectl restart
+
+Linux & Mac : sudo apachectl restart
  
 Le site est prêt à être utilisé.
  

@@ -29,7 +29,7 @@ Laravel utilise Composer pour gérer ses dépendances : [Site de Composer](http:
 2 - Installer Composer :
 
 * Via l'installateur Windows
-* Via le fichier composer.phar :
+* Via le fichier composer.phar [ici](http://getcomposer.org/) :
 
 Ajouter le répertoire où vous avez placé Composer (C:\bin dans cet exemple) et le répertoire de PHP (C:\wamp\bin\php\'votre version php') dans le PATH.
 

@@ -80,6 +80,12 @@ Une fois fait, faites cette commande :
 	cd /racine/de/vos/sites //(par exemple C:\wamp\www\)
 	git clone https://github.com/Sryther/myDropCode.git
 
+Le fichier .gitignore ignore les Vendors (si ils sont ignorés c'est parce que chacun à ses vendors). Vous devez donc les installer.
+
+	composer install
+
+Si vous venez à installer de nouveaux vendors (et qu'ils sont utiles pour le projet), n'oubliez pas de pusher le fichier composer.json.
+
 Etape 3
 -------
 

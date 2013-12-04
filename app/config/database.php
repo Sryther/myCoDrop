@@ -54,7 +54,7 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'fravimal.me',
+			'host'      => '88.191.164.186',
 			'database'  => 'mycodrop',
 			'username'  => 'mycodrop',
 			'password'  => 'FQEqQKF6YzMfBxrY',
